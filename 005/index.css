@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: #0d1f2d;
+  --color2: #546a7b;
+  --color3: #9ea3b0;
+  --color4: #fae1df;
+  --color5: #e4c3ad;
+  --black: #040c13;
+}
+
+@font-face {
+  font-family: Mallanna;
+  src: url("./src/fonts/Mallanna-Regular.ttf"), type("truetype");
+}
+
+@font-face {
+  font-family: Marker;
+  src: url("./src/fonts/PermanentMarker-Regular.ttf"), type("truetype");
+}
+
+body {
+  font-family: Mallanna;
+}
+
+h1 {
+  font-size: 2.027rem;
+  font-family: Marker;
+}
+h2 {
+  font-size: 1.802rem;
+  font-family: Marker;
+}
+h3 {
+  font-size: 1.602rem;
+}
+h4 {
+  font-size: 1.424rem;
+}
+h5 {
+  font-size: 1.266rem;
+}
+h6 {
+  font-size: 1.125rem;
+}
+p {
+  font-size: 1rem;
+}
+small {
+  font-size: 0.79rem;
+}
+
+.container {
+  width: 95%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  background-color: var(--color1);
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    gap: 2rem;
+
+    .profile-img-container {
+      .profile-img {
+        border-radius: 50%;
+        border: 3px solid var(--color2);
+      }
+    }
+
+    .textcontainer {
+      text-align: center;
+      color: var(--color4);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      p {
+        color: var(--color3);
+      }
+    }
+
+    .icon-container {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1.1rem;
+  }
+  .container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 1.15rem;
+  }
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .container {
+    width: 60%;
+  }
+}

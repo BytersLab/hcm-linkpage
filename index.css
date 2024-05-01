@@ -43,6 +43,7 @@ h4 {
 }
 h5 {
   font-size: 1.266rem;
+  font-weight: 400;
 }
 h6 {
   font-size: 1.125rem;
@@ -95,6 +96,58 @@ body {
     .icon-container {
       display: flex;
       gap: 2rem;
+    }
+  }
+
+  main {
+    .video-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: var(--color3);
+      padding: 4rem;
+      gap: 1rem;
+
+      .text-container {
+        .h2 {
+          font-size: 1.802rem;
+          font-family: Marker;
+          color: var(--color4);
+        }
+
+        h5,
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+        }
+      }
+
+      .video-container {
+        width: 100%;
+        video {
+          width: 100%;
+        }
+      }
+    }
+
+    .link-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 4rem 8rem 4rem;
+      gap: 2rem;
+      .link-container {
+        background-color: var(--color3);
+        padding: 2rem;
+        width: 100%;
+        border-radius: 1.25rem;
+      }
     }
   }
 }
