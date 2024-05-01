@@ -23,6 +23,10 @@
   src: url("./src/fonts/PermanentMarker-Regular.ttf"), type("truetype");
 }
 
+body {
+  font-family: Mallanna;
+}
+
 h1 {
   font-size: 2.027rem;
   font-family: Marker;
@@ -52,6 +56,7 @@ small {
 }
 
 .container {
+  width: 95%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -60,7 +65,6 @@ small {
 
 body {
   background-color: var(--color1);
-  font-family: Mallanna;
 
   header {
     display: flex;
@@ -92,21 +96,6 @@ body {
     .icon-container {
       display: flex;
       gap: 2rem;
-
-      img {
-        cursor: pointer;
-        transition: 0.1s;
-        box-shadow: 20px 20px 47px #09151f, -20px -20px 47px #11293b;
-
-        &:hover {
-          transform: scale(1.1);
-          border-bottom: 2px solid var(--color2);
-        }
-        &:active {
-          box-shadow: none;
-          transform: scale(1);
-        }
-      }
     }
   }
 
@@ -153,90 +142,34 @@ body {
       text-align: center;
       padding: 4rem 4rem 8rem 4rem;
       gap: 2rem;
-
-      .link-content {
+      .link-container {
+        background-color: var(--color3);
+        padding: 2rem;
         width: 100%;
-
-        a {
-          color: var(--color1);
-          text-decoration: none;
-        }
-
-        .link-container {
-          background-color: var(--color3);
-          padding: 2rem;
-          width: 100%;
-          border-radius: 1.25rem;
-          box-shadow: 20px 20px 47px #09151f, -20px -20px 47px #11293b;
-          cursor: pointer;
-          transition: 0.4s;
-
-          &:hover {
-            transform: scale(1.01);
-            background-color: var(--color4);
-          }
-
-          &:active {
-            background-color: var(--color2);
-          }
-        }
-      }
-    }
-  }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--black);
-    color: var(--color2);
-    padding: 2rem;
-    gap: 1rem;
-
-    .footer-links {
-      display: flex;
-      justify-content: space-between;
-      img {
-        width: 2rem;
-        height: 2rem;
-      }
-
-      .links {
-        display: flex;
-        gap: 1rem;
-        a {
-          color: var(--color2);
-        }
+        border-radius: 1.25rem;
       }
     }
   }
 }
 
 @media (min-width: 576px) {
+  .container {
+    width: 90%;
+  }
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 1.1rem;
   }
-
   .container {
     width: 85%;
-  }
-}
-
-@media (min-width: 870px) {
-  .container {
-    width: 80%;
   }
 }
 
 @media (min-width: 992px) {
   html {
     font-size: 1.125rem;
-  }
-
-  .container {
-    width: 65%;
   }
 }
 
@@ -245,7 +178,7 @@ body {
     font-size: 1.15rem;
   }
   .container {
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -254,7 +187,7 @@ body {
     font-size: 1.2rem;
   }
   .container {
-    width: 55%;
+    width: 70%;
   }
 }
 
@@ -263,6 +196,6 @@ body {
     font-size: 1.2rem;
   }
   .container {
-    width: 45%;
+    width: 60%;
   }
 }
