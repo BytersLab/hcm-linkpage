@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: #0d1f2d;
+  --color2: #546a7b;
+  --color3: #9ea3b0;
+  --color4: #fae1df;
+  --color5: #e4c3ad;
+  --black: #040c13;
+}
+
+@font-face {
+  font-family: Mallanna;
+  src: url("./src/fonts/Mallanna-Regular.ttf"), type("truetype");
+}
+
+@font-face {
+  font-family: Marker;
+  src: url("./src/fonts/PermanentMarker-Regular.ttf"), type("truetype");
+}
+
+h1 {
+  font-size: 2.027rem;
+  font-family: Marker;
+}
+h2 {
+  font-size: 1.802rem;
+  font-family: Marker;
+}
+h3 {
+  font-size: 1.602rem;
+}
+h4 {
+  font-size: 1.424rem;
+}
+h5 {
+  font-size: 1.266rem;
+  font-weight: 400;
+}
+h6 {
+  font-size: 1.125rem;
+}
+p {
+  font-size: 1rem;
+}
+small {
+  font-size: 0.79rem;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  background-color: var(--color1);
+  font-family: Mallanna;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    gap: 2rem;
+
+    .profile-img-container {
+      .profile-img {
+        border-radius: 50%;
+        border: 3px solid var(--color2);
+      }
+    }
+
+    .textcontainer {
+      text-align: center;
+      color: var(--color4);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      p {
+        color: var(--color3);
+      }
+    }
+
+    .icon-container {
+      display: flex;
+      gap: 2rem;
+
+      img {
+        cursor: pointer;
+        transition: 0.1s;
+        box-shadow: 20px 20px 47px #09151f, -20px -20px 47px #11293b;
+
+        &:hover {
+          transform: scale(1.1);
+          border-bottom: 2px solid var(--color2);
+        }
+        &:active {
+          box-shadow: none;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  main {
+    .video-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: var(--color3);
+      padding: 4rem;
+      gap: 1rem;
+
+      .text-container {
+        .h2 {
+          font-size: 1.802rem;
+          font-family: Marker;
+          color: var(--color4);
+        }
+
+        h5,
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+        }
+      }
+
+      .video-container {
+        width: 100%;
+        video {
+          width: 100%;
+        }
+      }
+    }
+
+    .link-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 4rem 8rem 4rem;
+      gap: 2rem;
+
+      .link-content {
+        width: 100%;
+
+        a {
+          color: var(--color1);
+          text-decoration: none;
+        }
+
+        .link-container {
+          background-color: var(--color3);
+          padding: 2rem;
+          width: 100%;
+          border-radius: 1.25rem;
+          box-shadow: 20px 20px 47px #09151f, -20px -20px 47px #11293b;
+          cursor: pointer;
+          transition: 0.4s;
+
+          &:hover {
+            transform: scale(1.01);
+            background-color: var(--color4);
+          }
+
+          &:active {
+            background-color: var(--color2);
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    color: var(--color2);
+    padding: 2rem;
+    gap: 1rem;
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      .links {
+        display: flex;
+        gap: 1rem;
+        a {
+          color: var(--color2);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 870px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 1.125rem;
+  }
+
+  .container {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 1.15rem;
+  }
+  .container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .container {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .container {
+    width: 45%;
+  }
+}
